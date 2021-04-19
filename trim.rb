@@ -1,5 +1,4 @@
 require 'json'
-require "tty-editor"
 
 require './split.rb'
 
@@ -70,8 +69,6 @@ def joinPath(paths)
     end
     out[1..-1]
 end
-
-require "pry"
 
 def convertId(id, tokens)
     if id.include? "providers"
